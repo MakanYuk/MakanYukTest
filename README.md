@@ -124,7 +124,8 @@ MakanYuk
  
 * **Error Response:**
 
-  None
+  * **Code:** 400 BAD REQUEST <br />
+    **Content:** `{ message : "invalid location", data: {} }`
 
 * **Sample Call:**
 

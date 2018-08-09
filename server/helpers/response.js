@@ -1,6 +1,8 @@
 module.exports = {
-    responseObj = {
-        message: '',
-        data: {}
+    responseObj: (message, data) => {
+        return {
+            "message": message || '',
+            "data": data || {}
+        }
     }
 }
