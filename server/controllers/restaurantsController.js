@@ -20,10 +20,7 @@ const searchRestaurant = (req, res, next) => {
                 "user-key": process.env.ZOMATO_KEY
             }
         })
-            .then(response => res.status(200).json({
-                message: 'success',
-                data: response.data
-            }))
+            .then(response => res.status(200).json(responseObj('success', response.data)))
             .catch(err => res.status(500).json(err))
     }
 }
